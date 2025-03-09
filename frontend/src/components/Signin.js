@@ -30,7 +30,7 @@ function Signin() {
 
   return (
     <div className="form-container">
-      <h2>Sign In</h2>
+      <h2>Signin</h2>
       {error && <p className="error">{error}</p>}
       <form onSubmit={handleSignin}>
         <input
@@ -47,7 +47,7 @@ function Signin() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Sign In</button>
+        <button type="submit">Signin</button>
       </form>
     </div>
   );

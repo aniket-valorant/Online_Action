@@ -9,12 +9,12 @@ function PostAuction() {
   const [closingTime, setClosingTime] = useState('');
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const token = localStorage.getItem('authToken');
-    if (!token) {
-      navigate('/signin'); // Redirect to login if not authenticated
-    }
-  }, [navigate]);
+  // useEffect(() => {
+  //   const token = localStorage.getItem('authToken');
+  //   if (!token) {
+  //     navigate('/signin'); // Redirect to login if not authenticated
+  //   }
+  // }, [navigate]);
 
   const handlePostAuction = async (e) => {
     e.preventDefault();
@@ -36,6 +36,7 @@ function PostAuction() {
       navigate('/dashboard');
     } catch (err) {
       alert('Failed to post auction. Please try again.');
+      // setEror(err.message)
     }
   };
 

@@ -33,6 +33,7 @@ function Dashboard() {
   return (
     <div>
       <h2>Auction Dashboard</h2>
+      <h1> Bla bla bla </h1>
 
       {/* 🔹 Logout Button 
       <button onClick={handleLogout} style={{ marginLeft: '10px', background: 'red', color: 'white' }}>
